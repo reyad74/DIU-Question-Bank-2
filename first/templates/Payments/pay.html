@@ -1,0 +1,31 @@
+{% extends 'common_code/base.html' %} <title>{% block title %}Table{% endblock title %}</title>
+{% load static %}
+{% block css %} <link rel="stylesheet" href="{% static 'css/p.css' %}"> {% endblock css %}
+
+{% block content %}
+<p> </p>
+{% if pay %}
+<table>
+    <tr>
+        <th>id</th>
+        <th>pay_id</th>
+        <th>pay_option</th>
+        <th>min_pay</th>
+    </tr>
+    {% for py in pay %}
+    <tr>
+        <td>{{py.id}}</td>
+        <td>{{py.pay_id}}</td>
+        <td>{{py.pay_option}}</td>
+        <td>{{py.min_pay}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<h1>Not available any data!</h1>
+{% endif %}
+{% endblock content %}
+
+
+
+

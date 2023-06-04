@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Dashboard{% endblock title %}</title>
+
+
+    {% block css %} 
+        <link rel="stylesheet" href="{% static 'css/dashboard.css' %}"> 
+    {% endblock css %}
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+   
+</head>
+<body>
+    <header>
+      <img src="{% static 'image/bad.jpg' %}" class = "logo">
+      <nav class="navigation">
+        <a href="#" class = "active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+        <a href="{% url 'upload' %}">Upload</a>
+      </nav>
+    </header>
+
+    <section class = "diu">
+        
+        <img src="{% static 'image/hill1.png' %}" id="hill1">
+        <img src="{% static 'image/hill2.png' %}" id="hill2">
+        <img src="{% static 'image/hill3.png' %}" id="hill3">
+        <img src="{% static 'image/hill4.png' %}" id="hill4">
+        <img src="{% static 'image/hill5.png' %}" id="hill5">
+        <img src="{% static 'image/tree.png' %}" id="tree">
+        <h2 id = "text">DIU QUESTION BANK</h2>
+        <img src="{% static 'image/leaf.png' %}" id="leaf">
+        <img src="{% static 'image/plant.png' %}" id="plant">
+    </section>
+
+    <section class = "sec">
+      <h2>DIU</h2>
+      <p>
+          In the DIU Question Bank, sections are used to categorize and organize questions based on specific subjects, topics, or disciplines. <br><br>
+          Sections provide a structured framework for users to easily navigate and locate relevant questions within the question bank. <br><br>
+      </p>
+   </section>
+
+
+
+
+
+
+   {% comment %} this is the footer code {% endcomment %}
+
+   <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="footer-col">
+                  <h4>Company</h4>
+                  <ul>
+                      <li><a href="#">about us</a></li>
+                      <li><a href="#">our services</a></li>
+                      <li><a href="#">privacy policy</a></li>
+                      <li><a href="#">affiliate program</a></li>
+                  </ul>
+              </div>
+              <div class="footer-col">
+                  <h4>Get Help</h4>
+                  <ul>
+                      <li><a href="#">FAQ</a></li>
+                      <li><a href="#">shipping</a></li>
+                      <li><a href="#">order status</a></li>
+                      <li><a href="#">payment option</a></li>
+                  </ul>
+              </div>
+
+              <div class="footer-col">
+                <h4>Online</h4>
+                <ul>
+                    <li><a href="#">watch</a></li>
+                    <li><a href="#">bag</a></li>
+                    <li><a href="#">shoes</a></li>
+                    <li><a href="#">dress</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-col">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                   <a href="#"><i class = "fab fa-facebook-f"></i></a>
+                   <a href="#"><i class = "fab fa-twitter"></i></a>
+                   <a href="#"><i class = "fab fa-instagram"></i></a>
+                   <a href="#"><i class = "fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+
+          </div>
+      </div>
+   </footer>
+
+
+  {% block content %}{% endblock content %}
+
+  {% load static %}  
+ <script src="{% static 'javaScript/base.js' %}"></script>
+
+</body>
+</html>

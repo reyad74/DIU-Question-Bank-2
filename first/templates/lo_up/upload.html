@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block <title></title> %}Upload{% endblock %}</title>
+    {% block css %} 
+    <link rel="stylesheet" href="{% static 'css/upload.css' %}"> 
+    {% endblock css %}
+</head>
+<body>
+
+
+
+
+    <section class = "diu">
+        
+        <img src="{% static 'image/hill1.png' %}" id="hill1">
+        <img src="{% static 'image/hill2.png' %}" id="hill2">
+        <img src="{% static 'image/hill3.png' %}" id="hill3">
+        <img src="{% static 'image/hill4.png' %}" id="hill4">
+        <img src="{% static 'image/hill5.png' %}" id="hill5">
+        <img src="{% static 'image/tree.png' %}" id="tree">
+        <img src="{% static 'image/leaf.png' %}" id="leaf">
+        <img src="{% static 'image/plant.png' %}" id="plant">
+    </section>
+
+    <div class = "box">
+        <h1>Upload Your Question</h1>
+        <form action="{% url 'upload' %}" method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            <label for="department">Select Department</label>
+            <select id="department" name="department">
+                <option value="cse">CSE</option>
+                <option value="eee">EEE</option>
+                <option value="nfe">NFE</option>
+            </select>
+
+
+            <label for="semester">Select Semester</label>
+                <select id="semester" name="semester">
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                    <option value="spring">Spring</option>
+                </select>
+
+
+
+            <label for="year">Year</label>
+                <select id="year" name="year">
+                    <option value="2023">2023</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                </select>
+               
+
+
+            <label for="exam">Exam</label>
+                <select id="exam" name="exam">
+                    <option value="midterm">Midterm</option>
+                    <option value="final">Final</option>
+                </select>    
+        
+       
+
+            <label for="semester">Select file</label>
+            <input type="file" class = "file" required name="file" id="file" >
+            <br><br>
+            <input type="submit" value="Upload">
+        </form>
+    </div>
+    
+</body>
+</html>

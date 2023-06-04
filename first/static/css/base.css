@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppoins', sans-serif;
+}
+
+body{
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    height: 150px;
+    width: 170px;
+    margin-top: -40px;
+}
+
+
+/* This is the nev bar */
+.navigation{
+    margin-left: 160px;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.navigation a:hover,
+.navigation a.active{
+    background-color: #359381;
+    color: #fff;
+}
+
+
+/* This is the sing up and login buttun */
+
+.log{
+    margin-left: 250px;
+}
+
+.log a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.log a:hover{
+    background-color: #359381;
+    color: #fff;
+}
+
+/* This is the picture section  */
+
+.diu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .8);
+}
+
+
+.diu img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}

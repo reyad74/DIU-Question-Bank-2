@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}HomePage{% endblock title %}</title>
+
+
+    {% block css %} 
+        <link rel="stylesheet" href="{% static 'css/base.css' %}"> 
+    {% endblock css %}
+  
+     
+
+   
+</head>
+<body>
+    <header>
+      <img src="{% static 'image/bad.jpg' %}" class = "logo">
+      <nav class="navigation">
+        <a href="#" class = "active">Home</a>
+        <a href="{% url 'signup' %}">About</a>
+        <a href="{% url 'signup' %}">Service</a>
+        <a href="{% url 'signup' %}">Upload</a>
+      </nav>
+
+      <nav class = "log">
+        <a href="{% url 'login' %}">Login</a>
+        <a href="{% url 'signup' %}">SingUp</a>
+      </nav>
+    </header>
+
+    <section class = "diu">
+        
+        <img src="{% static 'image/hill1.png' %}" id="hill1">
+        <img src="{% static 'image/hill2.png' %}" id="hill2">
+        <img src="{% static 'image/hill3.png' %}" id="hill3">
+        <img src="{% static 'image/hill4.png' %}" id="hill4">
+        <img src="{% static 'image/hill5.png' %}" id="hill5">
+        <img src="{% static 'image/tree.png' %}" id="tree">
+        <h2 id = "text">DIU QUESTION BANK</h2>
+        <img src="{% static 'image/leaf.png' %}" id="leaf">
+        <img src="{% static 'image/plant.png' %}" id="plant">
+    </section>
+
+    <section class = "sec">
+      <h2>Diu Scrolling Website</h2>
+      <p>
+          In the DIU Question Bank, sections are used to categorize and organize questions based on specific subjects, topics, or disciplines. <br><br>
+          Sections provide a structured framework for users to easily navigate and locate relevant questions within the question bank. <br><br>
+          Here are some key points about sections in the DIU Question Bank.
+          In the DIU Question Bank, sections are used to categorize and organize questions based on specific subjects, topics, or disciplines. <br><br>
+          Sections provide a structured framework for users to easily navigate and locate relevant questions within the question bank. <br><br>
+          Here are some key points about sections in the DIU Question Bank.
+      </p>
+   </section>
+
+
+
+  {% block content %}{% endblock content %}
+
+  {% load static %}  
+ <script src="{% static 'javaScript/base.js' %}"></script>
+
+</body>
+</html>

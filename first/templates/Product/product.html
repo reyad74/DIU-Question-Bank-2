@@ -1,0 +1,10 @@
+{% extends 'common_code/base.html' %} <title>{% block title %}Product{% endblock title %}</title>
+{% load static %}
+
+{% block css %} <link rel="stylesheet" href="{% static 'css/style1.css' %}"> {% endblock css %}
+
+{% block img %} <img src="{% static 'image/shuvo2.jpg' %}" alt=""> {% endblock img %}
+
+{% block content %}
+    <H1>This is our product page</H1>
+{% endblock content %}

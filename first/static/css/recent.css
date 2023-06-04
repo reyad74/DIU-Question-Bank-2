@@ -1,0 +1,20 @@
+body{
+    background-color: aquamarine;
+}
+form{
+    border: 5px solid rgb(173, 35, 138);
+    padding: 15px;
+}
+label{
+    color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+}
+input{
+    width: 250px;
+    background-color: transparent;
+}
+#check_box{
+    width: 20px;
+    height: 15px;
+}

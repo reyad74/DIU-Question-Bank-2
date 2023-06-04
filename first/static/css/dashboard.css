@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppoins', sans-serif;
+}
+
+body{
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    margin-left: -40px;
+    margin-top: -60px;
+    height: 150px;
+    width: 200px;
+
+}
+
+
+/* This is the nev bar */
+.navigation{
+    margin-left: 130px;
+}
+
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.navigation a:hover,
+.navigation a.active{
+    background-color: #359381;
+    color: #fff;
+}
+
+
+/* This is the sing up and login buttun */
+
+.log{
+    margin-left: 230px;
+}
+
+
+.log a:hover{
+    background-color: #359381;
+    color: #fff;
+}
+
+/* This is the picture section  */
+
+.diu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+#text {
+    position: absolute;
+    font-size: 5em;
+    color: #FFF;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .8);
+}
+
+
+.diu img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+
+.sec {
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec h2{
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec{
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+
+/* This is the foote part */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1170px;
+}
+
+.row{
+    display: flex;
+
+    width: 137%;
+    height: 250px;
+    background: transparent;
+    border: 2px solid rgba(183, 147, 147, 0.5);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(206, 198, 198, 0.9);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+
+}
+
+ul{
+    list-style: none;
+}
+
+.footer{
+    background-color: #003329;
+    position: relative;
+}
+
+.footer-col{
+    margin-top: 50px;
+    margin-left: 220px;
+}
+
+
+.footer-col h4{
+    font-size: 18px;
+    color: #fff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    background-color: #359381;
+    height: 2px;
+    box-sizing: border-box;
+    width: 60px;
+}
+
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #FFF;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+
+.footer-col ul li a:hover {
+    color: #ffffffff;
+    padding-left: 10px;
+}
+
+
+.footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,2555,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #fff;
+}
+
+
+@media(max-width: 767px){
+    .footer-col{
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+
+@media(max-width: 574px){
+    .footer-col{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
