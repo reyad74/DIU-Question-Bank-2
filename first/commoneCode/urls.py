@@ -6,6 +6,6 @@ from . import views
 urlpatterns = [
     path("login/", views.Login, name = "login"),
     path("signup/", views.SignUp, name = "signup"),
-    path("dashboard/", views.Dashboard, name = "dashboard"),
+    path("dashboard/", views.Dashboard2, name = "dashboard2"),
     path("upload/", views.Upload, name = "upload"),
 ]

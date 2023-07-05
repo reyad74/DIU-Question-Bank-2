@@ -18,7 +18,7 @@ def Login(request):
         if user is not None:
             # User credentials are valid, log in the user
             login(request, user)
-            return HttpResponseRedirect('/dashboard/')  # Redirect to the dashboard 
+            return HttpResponseRedirect('/dashboard2/')  # Redirect to the dashboard 
         else:
             # User credentials are invalid, handle the error
             error_message = "Invalid username or password."
@@ -59,7 +59,7 @@ def SignUp(request):
 # This is the dashboard
 
 def Dashboard(request):
-    return render(request, "lo_up/dashboard.html")
+    return render(request, "lo_up/dashboard2.html")
 
 
 
@@ -83,7 +83,7 @@ def Upload(request):
             file=file
         )
         question.save()
-        return HttpResponseRedirect('/dashboard/')  # Redirect to a success page after saving the data
+        return HttpResponseRedirect('/dashboard2/')  # Redirect to a success page after saving the data
     return render(request, "lo_up/upload.html")
 
 
